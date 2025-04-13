@@ -1,0 +1,14 @@
+{isloading &&
+                <div className="splash-screen-content">
+                    <h1>Welcome to My App </h1> 
+                    <p>Loading...</p>
+                    <button onClick={handleLoadingComplete}>Continue </button> 
+                    </div>
+
+                    }
+                    {!isloading && 
+                    (<div className="main-content">
+                        <h1 >Main Content </h1>
+                        <p >Here is the main content of the app. </p>
+                        </div>)
+                        }
